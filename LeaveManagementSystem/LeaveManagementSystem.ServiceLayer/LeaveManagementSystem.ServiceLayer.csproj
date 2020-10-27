@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="EmployeeProjectDetailsService.cs" />
     <Compile Include="EmployeeService.cs" />
+    <Compile Include="LeaveDataService.cs" />
     <Compile Include="MapperExtensions.cs" />
     <Compile Include="ProjectService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

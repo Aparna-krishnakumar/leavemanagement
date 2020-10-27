@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeProjectDetail.cs" />
+    <Compile Include="LeaveData.cs" />
     <Compile Include="LeaveManagementSystemDatabaseDbContext.cs" />
     <Compile Include="Migrations\202010261433240_initialdata.cs" />
     <Compile Include="Migrations\202010261433240_initialdata.designer.cs">
@@ -61,6 +62,22 @@
     <Compile Include="Migrations\202010270342283_Photo.cs" />
     <Compile Include="Migrations\202010270342283_Photo.designer.cs">
       <DependentUpon>202010270342283_Photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010271152548_LeaveData.cs" />
+    <Compile Include="Migrations\202010271152548_LeaveData.designer.cs">
+      <DependentUpon>202010271152548_LeaveData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010271200168_LeaveDataTable.cs" />
+    <Compile Include="Migrations\202010271200168_LeaveDataTable.designer.cs">
+      <DependentUpon>202010271200168_LeaveDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010271554407_ForiegnKey.cs" />
+    <Compile Include="Migrations\202010271554407_ForiegnKey.designer.cs">
+      <DependentUpon>202010271554407_ForiegnKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010271612127_Defaultset.cs" />
+    <Compile Include="Migrations\202010271612127_Defaultset.designer.cs">
+      <DependentUpon>202010271612127_Defaultset.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Project.cs" />
@@ -76,6 +93,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010270342283_Photo.resx">
       <DependentUpon>202010270342283_Photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010271152548_LeaveData.resx">
+      <DependentUpon>202010271152548_LeaveData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010271200168_LeaveDataTable.resx">
+      <DependentUpon>202010271200168_LeaveDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010271554407_ForiegnKey.resx">
+      <DependentUpon>202010271554407_ForiegnKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010271612127_Defaultset.resx">
+      <DependentUpon>202010271612127_Defaultset.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

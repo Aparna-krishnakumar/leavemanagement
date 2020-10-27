@@ -12,3 +12,8 @@ C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainMod
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.csproj.CopyComplete
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.dll
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.pdb
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.LeaveData.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.LeaveDataTable.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.ForiegnKey.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.Defaultset.resources

@@ -15,5 +15,7 @@ namespace LeaveManagementSystem.DomainModels
         public int ProjectID { get; set; }
         public string ProjectName { get; set; }
         public int ProjectManager { get; set; }
+        [ForeignKey("ProjectManager")]
+        public virtual Employee Employee { get; set; }
     }
 }

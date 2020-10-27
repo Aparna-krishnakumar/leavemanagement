@@ -51,6 +51,28 @@ namespace LeaveManagementSystem.Controllers
                 return View();
             }
         }
+        public ActionResult AddLeave()
+        {
+            return View();
+        }
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult AddLeave(LeaveDataViewModel rvm)
+        {
+            if (ModelState.IsValid)
+            {
+                rvm.EmployeeID = (int)Session["CurrentUserID"];
+                rvm.Approved = true;
+                
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("x", "Invalid data");
+                return View();
+            }
+        }
         public ActionResult Login()
         {
             LoginViewModel lvm = new LoginViewModel();

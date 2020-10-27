@@ -45,17 +45,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/allquestions">Employees</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/account/logout">Logout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/account/changeprofile">Change Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/account/changepassword">Change Password</a>
-                        </li>
-
-
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -71,14 +60,47 @@
                     }
                 </ul>
             </div>
+            @if (Session["CurrentUserName"] != null)
+            {
 
-            @*@<form class="form-inline" action="/home/search">
-                <input type="search" class="form-control mr-sm-2" style="width:150px" placeholder="Search" name="str">
-                <button class="btn btn-success">Search</button>
-            </form>*@
-        </nav>
-        
+                <form class="form-inline" action="/account/logout">
+
+                    <button class="btn btn-success">Logout</button>
+                </form>
+            }
+            </nav>
+
         @RenderBody()
-    </div>
+        @if (Session["CurrentUserName"] != null)
+        {
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <form class="form-inline" action="/account/addleave">
+
+                    <button class="btn btn-success">Apply Leave</button>
+                </form>
+            </td>
+            <td></td>
+            <td>
+                <form class="form-inline" action="/account/changeprofile">
+
+                    <button class="btn btn-success">Change Profile</button>
+                </form>
+            </td>
+            <td></td>
+            <td>
+                <form class="form-inline" action="/account/changepassword">
+
+                    <button class="btn btn-success">Change Password</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+            
+        }
+        </div>
+        
 </body>
 </html>

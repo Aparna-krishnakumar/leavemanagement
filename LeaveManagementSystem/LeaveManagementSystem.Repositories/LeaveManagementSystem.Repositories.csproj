@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="EmployeeRepository.cs" />
     <Compile Include="EmpoyeeProjectDetailRepository.cs" />
+    <Compile Include="LeaveDataRepository.cs" />
     <Compile Include="ProjectsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

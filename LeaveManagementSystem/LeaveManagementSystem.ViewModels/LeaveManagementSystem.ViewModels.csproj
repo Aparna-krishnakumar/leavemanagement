@@ -55,6 +55,7 @@
     <Compile Include="EditEmployeePasswordViewModel.cs" />
     <Compile Include="EditEmployeeProjectDetailsViewModel.cs" />
     <Compile Include="EmployeeViewModel.cs" />
+    <Compile Include="LeaveDataViewModel.cs" />
     <Compile Include="LoginViewModel.cs" />
     <Compile Include="ProjectViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
