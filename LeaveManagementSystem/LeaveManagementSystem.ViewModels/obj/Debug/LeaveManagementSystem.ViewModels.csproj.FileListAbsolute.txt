@@ -1,0 +1,12 @@
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\LeaveManagementSystem.ViewModels.dll.config
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\LeaveManagementSystem.ViewModels.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\LeaveManagementSystem.ViewModels.pdb
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\obj\Debug\LeaveManagementSystem.ViewModels.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\obj\Debug\LeaveManagementSystem.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\obj\Debug\LeaveManagementSystem.ViewModels.csproj.CopyComplete
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\obj\Debug\LeaveManagementSystem.ViewModels.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.ViewModels\obj\Debug\LeaveManagementSystem.ViewModels.pdb

@@ -1,0 +1,14 @@
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\LeaveManagementSystem.DomainModels.dll.config
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\LeaveManagementSystem.DomainModels.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\LeaveManagementSystem.DomainModels.pdb
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.initialdata.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.Photo.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.csproj.CopyComplete
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.dll
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.pdb
