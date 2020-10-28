@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeProjectDetail.cs" />
+    <Compile Include="HRtable.cs" />
     <Compile Include="LeaveData.cs" />
     <Compile Include="LeaveManagementSystemDatabaseDbContext.cs" />
     <Compile Include="Migrations\202010261433240_initialdata.cs" />
@@ -79,8 +80,13 @@
     <Compile Include="Migrations\202010271612127_Defaultset.designer.cs">
       <DependentUpon>202010271612127_Defaultset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010271753481_correctionforiegnkey.cs" />
+    <Compile Include="Migrations\202010271753481_correctionforiegnkey.designer.cs">
+      <DependentUpon>202010271753481_correctionforiegnkey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Project.cs" />
+    <Compile Include="ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010271612127_Defaultset.resx">
       <DependentUpon>202010271612127_Defaultset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010271753481_correctionforiegnkey.resx">
+      <DependentUpon>202010271753481_correctionforiegnkey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

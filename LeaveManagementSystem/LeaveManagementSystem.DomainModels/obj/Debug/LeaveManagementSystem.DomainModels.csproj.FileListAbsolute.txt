@@ -17,3 +17,4 @@ C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainMod
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.LeaveDataTable.resources
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.ForiegnKey.resources
 C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.Defaultset.resources
+C:\Users\ASUS\source\repos\LeaveManagementSystem\LeaveManagementSystem.DomainModels\obj\Debug\LeaveManagementSystem.DomainModels.Migrations.correctionforiegnkey.resources
