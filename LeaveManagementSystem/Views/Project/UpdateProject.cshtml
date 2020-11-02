@@ -1,10 +1,10 @@
 ﻿@{
     ViewBag.Title = "Add Project";
 }
+<div class="jumbotron"> <h1>Apply Leave</h1></div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
 
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron"> <h1>Apply Leave</h1></div>       
         <form novalidate="novalidate" action="/project/UpdateProject" method="post" class="needs-validation" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <div class="form-row">
@@ -22,6 +22,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Update</button>
+            <a class="btn btn-danger float-right" href="~/Admin/ProjectList">Cancel</a>
         </form>
     </div>
 </div>
@@ -32,10 +33,8 @@
 
     $(document).on("submit", ".needs-validation", validate);
     $(".needs-validation input").blur(validate);
-    function validate(event)
-    {
-        if ($(".needs-validation")[0].checkValidity() == false || $(".email-exist").text() != "")
-        {
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false || $(".email-exist").text() != "") {
             event.preventDefault();
         }
         $(".needs-validation")[0].classList.add("was-validated");

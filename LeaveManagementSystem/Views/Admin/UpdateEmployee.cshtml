@@ -3,28 +3,26 @@
 @{
     ViewBag.Title = "Update Employee Data";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron">
-            <h1>Change Profile</h1>
-        </div>
+<div class="jumbotron">
+    <h1>Change Profile</h1>
+</div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
+        
         
         <form novalidate="novalidate" action="/account/changeprofile" method="post" class="needs-validation">
             @Html.AntiForgeryToken()
             <div class="form-row">
-                <div class="form-group col-sm-12">
-                    <label for="txtName">Name:</label>
-                    @Html.HiddenFor(temp => temp.Name)
-                    <span>@Model.Name</span>
-                </div>
-            </div>
-
-            <div class="form-row">
                 <div class="form-group col-sm-6">
-                    <label for="txtEmail">Email:</label>
-                    @Html.HiddenFor(temp => temp.Email)
-                    <span>@Model.Email</span>
+                    <label for="txtName">Name</label>
+                    <input type="text" class="form-control" id="txtName" value="@Model.Name" name="Name" disabled="disabled" />
+
+                </div>
+
+
+                <div class="form-group col-sm-6">
+                    <label for="txtEmail">Email</label>
+                    <input type="email" class="form-control" id="txtEmail" value="@Model.Email" name="Email" disabled="disabled" />
                 </div>
             </div>
             <div class="form-row">
@@ -34,10 +32,11 @@
 
                 </div>
             </div>
-           
+
 
             @Html.ValidationSummary()
-            <button type="submit" class="btn btn-primary">Update Profile</button>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a class="btn btn-danger float-right" href="~/admin/EmployeeList">Cancel</a>
         </form>
     </div>
 </div>

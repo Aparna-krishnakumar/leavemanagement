@@ -3,11 +3,9 @@
 @{
     ViewBag.Title = "Change Profile";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron"><h1>Change Profile</h1></div>
-        
+<div class="jumbotron"><h1>Change Profile</h1></div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
         <form novalidate="novalidate" action="/account/changeprofile" method="post" class="needs-validation">
             @Html.AntiForgeryToken()
             <div class="form-row">
@@ -58,7 +56,24 @@
             </div>
 
             @Html.ValidationSummary()
-            <button type="submit" class="btn btn-primary">Update Profile</button>
+            <button type="submit" class="btn btn-primary">Update </button>
+            @if ((string)Session["CuurentUserDesignation"] == "Admin")
+            {
+                <a class="btn btn-danger float-right" href="~/admin/index">Cancel</a>
+            }
+            else if ((string)Session["CuurentUserDesignation"] == "HR")
+            {
+                <a class="btn btn-danger float-right" href="~/HR/index">Cancel</a>
+            }
+            else if ((string)Session["CuurentUserDesignation"] == "Project Manager")
+            {
+                <a class="btn btn-danger float-right" href="~/ProjectManager/index">Cancel</a>
+            }
+            else
+            {
+                <a class="btn btn-danger float-right" href="~/Employee/Index">Cancel</a>
+            }
+
         </form>
     </div>
 </div>
@@ -69,10 +84,8 @@
 
     $(document).on("submit", ".needs-validation", validate);
     $(".needs-validation input").blur(validate);
-    function validate(event)
-    {
-        if ($(".needs-validation")[0].checkValidity() == false)
-        {
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false) {
             event.preventDefault();
         }
         $(".needs-validation")[0].classList.add("was-validated");

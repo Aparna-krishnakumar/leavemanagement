@@ -1,11 +1,10 @@
 ﻿@{
     ViewBag.Title = "Add HR";
 }
+<div class="jumbotron"><h1>Add HR</h1></div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
 
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron"
-><h1>Add HR</h1></div>        
         <form novalidate="novalidate" action="/admin/AddEmployeeHR" method="post" class="needs-validation" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <div class="form-row">
@@ -45,7 +44,7 @@
                 </div>
 
             </div>
-            
+
 
             <div class="form-row">
                 <div class="form-group col-sm-6">
@@ -75,6 +74,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Add</button>
+            <a class="btn btn-danger float-right" href="~/admin/EmployeeList">Cancel</a>
         </form>
     </div>
 </div>
@@ -85,43 +85,35 @@
 
     $(document).on("submit", ".needs-validation", validate);
     $(".needs-validation input").blur(validate);
-    function validate(event)
-    {
-        if ($(".needs-validation")[0].checkValidity() == false || $(".email-exist").text() != "")
-        {
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false || $(".email-exist").text() != "") {
             event.preventDefault();
         }
         $(".needs-validation")[0].classList.add("was-validated");
     }
 
-    function escapeRegExp(str)
-    {
+    function escapeRegExp(str) {
         return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
     }
 
-    $("#txtEmail").blur(function ()
-    {
+    $("#txtEmail").blur(function () {
         $.ajax({
             url: "/api/account?email=" + $("#txtEmail").val(), type: "GET", success:
-                function (response)
-                {
-                    if (response == "Not Found")
-                    {
+                function (response) {
+                    if (response == "Not Found") {
                         $(".email-exist").text("");
                         $(".email-exist").parent(".form-group").find(".valid-feedback").css("color", "#28a745");
                     }
-                    else
-                    {
+                    else {
                         $(".email-exist").text("Email already registered");
                         $(".email-exist").parent(".form-group").find(".valid-feedback").css("color", "white");
                     }
                 },
-            error: function ()
-            {
+            error: function () {
                 $(".email-exist").text("Error");
             }
         });
-      });
+    });
 </script>
 
 

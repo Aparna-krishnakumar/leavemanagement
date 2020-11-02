@@ -1,32 +1,31 @@
 ﻿@{
     ViewBag.Title = "Apply Leave";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron"><h1>Apply Leave</h1></div>
+<div class="jumbotron"><h1>Apply Leave</h1></div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
+        
         
         <form novalidate="novalidate" action="/leave/AddLeave" method="post" class="needs-validation" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <div class="form-row">
-                <div class="form-group col-sm-12">
+                <div class="form-group col-sm-6">
                     <label for="txtStartDate">Start Date</label>
                     <input type="date" class="form-control" id="txtStartDate" placeholder="Enter Start Date" name="StartDate" required="required" autofocus="autofocus" />
 
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-sm-12">
+
+                <div class="form-group col-sm-6">
                     <label for="txtEndDate">End Date</label>
                     <input type="date" class="form-control" id="txtEndDate" placeholder="Enter End Date" name="EndDate" required="required" />
 
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-sm-6">
+                <div class="form-group col-sm-12">
                     <label for="txtReason">Reason Of Absence</label>
-                    <input type="text" class="form-control" id="txtReason" placeholder="Reason Of Absence" name="ReasonOfAbsence" required="required" />
-
+                    <textarea type="text" class=" form-control" id="txtReason" placeholder="Reason Of Absence" name="ReasonOfAbsence" required="required">
+</textarea>
                 </div>
 
 
@@ -35,6 +34,7 @@
 
 
             <button type="submit" class="btn btn-primary">Apply</button>
+            <a class="btn btn-danger float-right" href="~/Employee/Index">Cancel</a>
         </form>
     </div>
 </div>

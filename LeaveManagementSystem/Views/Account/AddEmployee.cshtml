@@ -1,11 +1,11 @@
 ﻿@{
     ViewBag.Title = "Add Employee";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron"><h1>Add Employee</h1></div>
-        <form novalidate="novalidate" action="/account/AddEmployee" method="post" class=".needs-validation" enctype="multipart/form-data">
+<div class="jumbotron"><h1>Add Employee</h1></div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
+        
+        <form novalidate="novalidate" action="/account/AddEmployee" method="post" class="justify-content-center mx-auto .needs-validation"  enctype="multipart/form-data">
                 @Html.AntiForgeryToken()
                 <div class="form-row">
                     <div class="form-group col-sm-12">
@@ -80,6 +80,8 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">Add</button>
+            <a class="btn btn-danger float-right" href="~/HR/employeelist">Cancel</a>
+
             </form>
     </div>
 </div>

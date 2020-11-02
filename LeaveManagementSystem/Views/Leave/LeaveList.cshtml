@@ -12,8 +12,8 @@
 
             <thead>
                 <tr>
-                    <th>Leave ID</th>
-                    <th>Employee ID</th>
+                    <th>Employee name</th>
+                    
                     <th>Start Date</th>
                     <th>End Date</th>
                     <th>Reason of absence</th>
@@ -24,8 +24,7 @@
             @foreach (var item in Model)
             {
         <tr>
-            <td>@item.LeaveID</td>
-            <td>@item.EmployeeID</td>
+            <td>@item.EmployeeName</td>
             <td>@item.StartDate.ToShortDateString()</td>
             <td>@item.EndDate.ToShortDateString()</td>
             <td>@item.ReasonOfAbsence</td>

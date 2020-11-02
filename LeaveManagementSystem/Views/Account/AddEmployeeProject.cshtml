@@ -1,13 +1,11 @@
 ﻿@{
     ViewBag.Title = "Add Employee To Your Project";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron">
-            <h1>Add Employee To Your Project</h1>
-        </div>
-
+<div class="jumbotron">
+    <h1>Add Employee To Your Project</h1>
+</div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
         <form novalidate="novalidate" action="/account/AddEmployeeProject" method="post" class="needs-validation">
             @Html.AntiForgeryToken()
             <div class="form-row">

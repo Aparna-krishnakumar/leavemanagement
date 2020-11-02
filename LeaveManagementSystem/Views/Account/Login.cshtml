@@ -19,9 +19,9 @@
 
                 <div class="form-group mr-3">
                     <label for="pwd" class="mr-1">Password:</label>
-                    <input type="password" class="form-control" id="pwd" name="Password" required="required" value="@Model.Password">
+                    <input type="password" class="form-control" id="pwd" name="Password" required="required" value="@Model.Password" minlength="6" >
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Password must contain at least 6 characters</div>
+                    <div class="invalid-feedback">Cannot be empty</div>
                 </div>
 
                 <button class="btn btn-success">Login</button>

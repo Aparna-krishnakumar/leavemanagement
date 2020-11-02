@@ -2,8 +2,8 @@
     ViewBag.Title = "Add Project";
 }
 
-<div class="row">
-    <div class="col-sm-12">
+<div class="justify-content-center row">
+    <div class="col-sm-6">
         <h1>Apply Leave</h1>
         <form novalidate="novalidate" action="/account/AddProject" method="post" class="needs-validation" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
@@ -22,6 +22,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
+            <a class="btn btn-danger float-right" href="~/admin/ProjectList">Cancel</a>
         </form>
     </div>
 </div>

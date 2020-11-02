@@ -12,7 +12,6 @@ namespace LeaveManagementSystem.Controllers
     [CustomAuthenticationFilter]
     public class HomeController : Controller
     {
-        [CustomAuthorize("Employee")]
         public ActionResult Index()
         {
             return View();

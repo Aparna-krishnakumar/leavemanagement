@@ -1,12 +1,12 @@
 ﻿@{
     ViewBag.Title = "Add Project";
 }
-
-<div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron">
-            <h1>Add Project</h1>
-        </div>
+<div class="jumbotron">
+    <h1>Add Project</h1>
+</div>
+<div class="justify-content-center row">
+    <div class="col-sm-6">
+        
         
         <form novalidate="novalidate" action="/project/AddProject" method="post" class="needs-validation" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
@@ -35,6 +35,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
+            <a class="btn btn-danger float-right" href="~/Admin/ProjectList">Cancel</a>
         </form>
     </div>
 </div>

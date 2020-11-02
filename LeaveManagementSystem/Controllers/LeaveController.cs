@@ -131,10 +131,11 @@ namespace LeaveManagementSystem.Controllers
             if (ModelState.IsValid)
             {
                 rvm.EmployeeID = (int)Session["CurrentUserID"];
+                rvm.EmployeeName = (string)Session["CurrentUserName"];
                 rvm.Approved = false;
                 rvm.Rejected = false;
                 ls.InsertLeaveData(rvm);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Employee");
             }
             else
             {
@@ -153,6 +154,8 @@ namespace LeaveManagementSystem.Controllers
             if (ModelState.IsValid)
             {
                 rvm.EmployeeID = (int)Session["CurrentUserID"];
+
+                rvm.EmployeeName = (string)Session["CurrentUserName"];
                 rvm.Approved = false;
                 rvm.Rejected = false;
                 lsa.InsertLeaveData(rvm);
@@ -166,7 +169,7 @@ namespace LeaveManagementSystem.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "ProjectManager");
                 }
                
             }

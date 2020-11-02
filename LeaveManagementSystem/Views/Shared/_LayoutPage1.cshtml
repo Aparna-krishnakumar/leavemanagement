@@ -17,7 +17,23 @@
             <div class="collapse navbar-collapse" id="collapsibleNavBar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/home/index">Home</a>
+                        @if ((string)Session["CuurentuserDesignation"] == "Admin")
+                        {
+                            <a class="nav-link" href="/Admin/index">Home</a>
+                        }
+                        else if ((string)Session["CuurentuserDesignation"] == "HR")
+                        {
+                            <a class="nav-link" href="/HR/index">Home</a>
+                        }
+                        else if ((string)Session["CuurentuserDesignation"] == "Project Manager")
+                        {
+                            <a class="nav-link" href="/ProjectManager/index">Home</a>
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="/home/index">Home</a>
+                        }
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/home/about">About</a>
