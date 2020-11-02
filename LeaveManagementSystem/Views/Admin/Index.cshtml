@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Welcome to Leave Management System</h1>
+            <p>You are logged in as Admin</p>
+        </div>
+    </div>
+    @if (Session["CurrentUserName"] != null)
+    {<div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/leavelist.png" />
+
+                        <div class="card-content">
+                            <p>View the list of projects where you can add,remove or update a project.</p>
+                        </div>
+
+                        <div class="card-action">
+                            <ul>
+                                <a class="btn btn-outline-primary" href="/admin/projectlist" >Project List</a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/addemployee.png" />
+
+                        <div class="card-content">
+                            <p>View the list of Project Managers and HR employees where you can add or remove employees to the list</p>
+                        </div>
+
+                        <div class="card-action">
+                            <ul>
+                               <a class="btn btn-outline-primary" href="/admin/employeelist">Employee list</a>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/leavelist.png" />
+                        <div class="card-content">
+                            <p>See Leave applications submitted by your employees.</p>
+                        </div>
+
+                        <div class="card-action">
+                            <ul>
+                                <a class="btn btn-outline-primary" href="/leave/leavelistadmin" >Leave application list</a>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+
+</div>

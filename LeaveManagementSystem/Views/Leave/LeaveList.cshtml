@@ -1,0 +1,79 @@
+﻿@model List<LeaveManagementSystem.ViewModels.LeaveDataViewModel>
+
+@{
+    ViewBag.Title = "Leave Data";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron"><h4>Leave Applications</h4></div>
+        
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+                    <th>Leave ID</th>
+                    <th>Employee ID</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Reason of absence</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+        <tr>
+            <td>@item.LeaveID</td>
+            <td>@item.EmployeeID</td>
+            <td>@item.StartDate.ToShortDateString()</td>
+            <td>@item.EndDate.ToShortDateString()</td>
+            <td>@item.ReasonOfAbsence</td>
+            <td>
+                @if (@item.Approved == true)
+                {
+                    <span>Approved</span>
+                }
+                else if (item.Rejected == true)
+                {
+                    <span>Rejected</span>
+                }
+                else
+                {
+                    <a class="btn btn-success" href="/leave/leaveapprove/@item.LeaveID">
+                        Approve
+                    </a>
+                    <a class="btn btn-success" href="/leave/leavereject/@item.LeaveID">
+                        Reject
+                    </a>
+                }
+
+
+            </td>
+            @if (@item.Approved == true || item.Rejected == true)
+            {
+                <td>
+                    <a class="btn btn-outline-danger" href="/leave/leaveremove/@item.LeaveID">
+                        Remove
+                    </a>
+                </td>
+            }
+            </tr>
+
+            }
+        </table>
+    </div>
+</div>
+
+<script>
+    $("a[href='/leave/leavelist']").attr("id", "active");
+    $(document).on("submit", ".needs-validation", validate);
+    $(".needs-validation input").blur(validate);
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false || $(".email-exist").text() != "") {
+            event.preventDefault();
+        }
+        $(".needs-validation")[0].classList.add("was-validated");
+    }
+</script>
+

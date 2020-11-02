@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "HR";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Welcome to Leave Management System</h1>
+            <p>You are logged in as HR</p>
+        </div>
+    </div>
+    @if (Session["CurrentUserName"] != null)
+    {<div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/addleave.png" />
+
+                        <div class="card-content">
+                            <p>You can apply for leave here</p>
+                        </div>
+
+                        <div class="card-action">
+                            <a href="/leave/addleaveadmin">Apply Leave</a><br />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/addemployee.png" />
+
+                        <div class="card-content">
+                            <p>Analyse your employees and add or remove them. </p>
+                        </div>
+
+                        <div class="card-action">
+                            <a href="/account/employeelist">Employee list</a><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="img-fluid" src="~/Images/leavelist.png" />
+
+                        <div class="card-content">
+                            <p>See Leave applications submitted by your employees.</p>
+                        </div>
+
+                        <div class="card-action">
+                            <a href="/leave/leavelist">Leave application list</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model LeaveManagementSystem.ViewModels.SearchViewModel
+
+@{
+    ViewBag.Title = "Employee Data";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h4>Employee List</h4>
+            <form class="form-inline" action="/account/search">
+                @Html.DropDownListFor(temp => temp.Name, Model.Names, "Select Name", new { @class = "form-control mr-sm-2" })
+                @Html.DropDownListFor(temp => temp.Role, Model.Roles, "Select Role", new { @class = "form-control mr-sm-2" })
+                <button class="btn btn-success">Search</button>
+            </form>
+        </div>
+        
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Designation</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Remove from list</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model.employeeList)
+            {
+                
+                    if (item.Designation == "Employee")
+                    {
+                            <tr>
+                                <td><img src="data:image;base64,@item.Photo" width="100px" /></td>
+                                <td>@item.EmployeeID</td>
+                                <td>@item.Name</td>
+                                <td>@item.Email</td>
+                                <td>@item.Designation</td>
+                                <td>@item.Address</td>
+                                <td>@item.Mobile</td>
+                                <td>
+                                    <a class="btn btn-success" href="/account/changeprofile/@item.EmployeeID">
+                                        Update
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success" href="/account/employeeremove/@item.EmployeeID">
+                                        Remove
+                                    </a>
+                                </td>
+                            </tr>
+                    }
+            }
+        </table>
+        <a class="btn btn-primary" href="/account/addemployee">
+            Add Employee
+        </a>
+    </div>
+</div>
+
+
